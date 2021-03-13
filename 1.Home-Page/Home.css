@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li, a{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #FF0000;
+}
+
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.dropbtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black; color: white; border-radius: 20px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black; color: white; border-radius: 20px;}
+
+* {box-sizing:border-box}
+
+.container{
+  width: 100%;
+  height: auto;
+}
+
+.slider-inner{
+  width: 100%;
+  height: auto;
+  position:relative;
+  overflow:hidden;
+  float:left;
+}
+
+.slider-inner img{
+  display:none;
+  width: 100%;
+  height: auto;
+}
+
+.slider-inner img.active{
+  display:inline-block;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.gallery{
+	position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#gambar{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+.content2{
+	position: relative;
+  text-align: center;
+  color: white;
+}
+
+.artists{
+  font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: 2vw;
+	position: absolute;
+  top: 50%;
+ 	left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
+  background-color: #FF0000;
+}
+
+footer a.right{
+    float: right;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.socmedLogo{
+    width: 70px;
+    height: auto;
+    padding: 1, 0;
+    margin-right: 20px;
+}
+
+.companyLogo{
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:800px){
+  .socmedLogo{
+    width: 17px;
+  }
+  .companyLogo{
+    width: 45px;
+  }
+  .btnAbout{
+    font-size: 15px;
+    padding: 19px 16px;
+  }
+  .dropbtn{
+    padding: 10px;
+    font-size: 16px;
+  }
+  .logo{
+    width: 155px;
+  }
+
+  li, a{
+    font-size: 15px;
+  }
+  .dropdown-content{
+    min-width: 125px;
+  }
+
+} 

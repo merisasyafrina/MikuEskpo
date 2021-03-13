@@ -1,0 +1,241 @@
+.slideshow{
+    /*margin-top: 25px;*/
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+}
+.slideshow img{
+    display: none;
+    width: 100%;
+    height: auto;   
+}
+.slideshow img.show{
+    display: inline-block;
+}
+
+input[type=text],[type=email]{
+    width: 500px;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    color: red;
+    font-size: larger;
+    border-style: none;
+  }
+  select{
+    width: 500px;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    color: red;
+    font-size: larger;
+    border-style: none;
+  }
+
+  input[type=text]:focus{
+    border-bottom: 1px solid red;
+    }
+    input[type=email]:focus{
+    border-bottom: 1px solid red;
+    }
+    textarea{
+      color: #FF0000;
+      font-size: larger;
+      border: none;
+      background: #f1f1f1;
+    }
+    textarea:focus{
+      border-bottom: 1px solid red;
+    }
+  
+
+.holder{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+label{
+    width: 100%;
+    height: auto;
+}
+
+.btnholder{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+.btnholder input{
+    background-color: red;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.holder label{
+    font-size: 20px;
+}
+.holder a{
+  color: black;
+  text-decoration: underline;
+}
+.holder a:hover{
+  cursor: pointer;
+}
+.holder a label{
+  cursor: pointer;
+}
+
+.holder label{
+    font-size: 20px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   
+   li, a{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #FF0000;
+}
+
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.dropbtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black; color: white; border-radius: 20px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black; color: white; border-radius: 20px;}
+
+footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
+  background-color: #FF0000;
+}
+
+footer a.right{
+    float: right;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.socmedLogo{
+    width: 70px;
+    height: auto;
+    padding: 1, 0;
+    margin-right: 20px;
+}
+
+.companyLogo{
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+   .autoslide{
+       position:relative;
+       animation:
+       animateright 0.4s}
+   @keyframes animateright{
+       from{right:-300px;opacity:0} 
+       to{right:0;opacity:1}
+    }
+
+
+    @media only screen and (max-width: 800px){
+        img{
+            width: 650px;
+            height: auto;
+        }
+        .logo img{
+            width: 150px;
+        }
+        select,input[type=text],[type=email]{
+            width: 350px;
+        }
+        .btnholder input{
+            padding: 10px 25px;
+        }
+        .socmedLogo{
+            width: 17px;
+          }
+          .companyLogo{
+            width: 45px;
+          }
+          .btnAbout{
+            font-size: 15px;
+            padding: 19px 16px;
+          }
+          .dropbtn{
+            padding: 10px;
+            font-size: 16px;
+          }
+          .logo{
+            width: 155px;
+          }
+        
+          li, a{
+            font-size: 15px;
+          }
+          .dropdown-content{
+            min-width: 125px;
+          }
+    }

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.dropbtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: black;
+  padding: 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black; color: white; border-radius: 20px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black; color: white; border-radius: 20px;}
+.head{
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.headbanner{
+    text-align: center;
+    /*margin-top: 25px;*/
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+
+#banner{
+  width: 100%;
+    height: auto;
+}
+
+.galleryshow{
+ text-align: center;
+ margin-bottom: 125px;
+}
+
+.show{
+    margin-top: 75px;
+    text-align: center;
+    display: none;
+    margin-bottom: 75px;
+    width: 100%;
+    height: auto;
+}
+.show img{
+    width: 650px;
+    /*width: 100%;
+    height: auto;*/
+}
+.show p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 35px;
+    width: 100%;
+    height: auto;
+}
+
+
+.galleryshow input{
+    width: 200px;
+}
+
+.galleryshow input:hover{
+    opacity: 0.7;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   
+   li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+   }
+   
+   header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #FF0000;
+   }
+   
+   .logo{
+    cursor: pointer;
+    margin-right: auto;
+   }
+   
+   .nav_links{
+    list-style: none;
+   }
+   
+   .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+   }
+   
+   .nav_links li a{
+    transition: all 0.3s ease 0s;
+   }
+   
+   .nav_links li a:hover{
+    color: #000000;
+   }
+   footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #FF0000;
+  }
+  
+  footer a.right{
+      float: right;
+      text-align: center;
+      padding: 8px 10px;
+      text-decoration: none;
+  }
+  
+  .socmedLogo{
+      width: 70px;
+      height: auto;
+      padding: 1, 0;
+      margin-right: 20px;
+  }
+  
+  .companyLogo{
+      width: 10%;
+      height: auto;
+      cursor: pointer;
+      margin-right: auto;
+  }
+@media only screen and (max-width: 800px){
+    .headbanner img{
+        width: 550px;
+    }
+    .show img{
+        width: 350px;
+    }
+    .galleryshow input{
+        width: 175px;
+    }
+    .show p{
+        font-size: 20px;
+    }
+    .socmedLogo{
+        width: 17px;
+      }
+      .companyLogo{
+        width: 45px;
+      }
+      .btnAbout{
+        font-size: 15px;
+        padding: 19px 16px;
+      }
+      .dropbtn{
+        padding: 10px;
+        font-size: 16px;
+      }
+      .logo{
+        width: 155px;
+      }
+    
+      li, a{
+        font-size: 15px;
+      }
+      .dropdown-content{
+        min-width: 125px;
+      }
+
+}
